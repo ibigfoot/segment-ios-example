@@ -23,6 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         config.recordScreenViews = true
         config.use(SEGAppboyIntegrationFactory.instance())
         
+        /*
+         Uncommenting this line causes track events to not be sent to either Segment or Braze 
+         */
         //config.middlewares = [BrazeDebounceMiddleware()]
         
         config.launchOptions = launchOptions
